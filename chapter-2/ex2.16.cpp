@@ -2,7 +2,7 @@
 
 
 int main() {
-    int i = 5, &r1 = i;
+    int i = 0, &r1 = i;
     double d = 0, &r2 = d;
 
     std::cout << "i: " << i << ", r1: " << r1 
@@ -20,6 +20,9 @@ int main() {
             << ", d: " << d << ", r2: " << r2 << std:: endl;
 
     i = r2;        // valid
+    std::cout << "i: " << i << ", r1: " << r1 
+              << ", d: " << d << ", r2: " << r2 << std:: endl;
+
     r1 = d;        // valid
 
     std::cout << "i: " << i << ", r1: " << r1 
