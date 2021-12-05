@@ -1,20 +1,14 @@
 #include <iostream>
 
 int main() {
-
-    // int i, *const cp; // illegal -- top-level const pointers must be initialized. 
-    // int* p1, *const p2; // illegal -- top-level const pointers must be initialized.
-    // const int ic, &r = ic; // illegal -- const int must be initialized. 
-    // const int* const p3; //illegal --  top-level const pointers must be initialized.
-    const int* p; // legal -- This low-level const can be initialized to an int,
-                // even though the programmer can't change that int through p.
-
-    // Exercise 2.29:
-
-    // none of these assignments will work, since none of the variables aside from p
-    // were successfully initialized in exercise 2.28.
+	
+	int i, *const cp; // illegal. i is an int. cp is a const pointer to int, and needs to be initialized.
+	int *p1, *const p2; // illegal. p1 is a pointer to int. p2 is a const pointer to int, but const pointers must be initialized.
+	const int ic, &r = ic; // illegal. ic is a const int, so must be initialized. r is a reference to ic.
+	const int *const p3;   // illegal. p3 is a const pointer to const int, but needs to be initialized.
+	const int *p;	// legal. p is a pointer to const int.
 
 
 
-    return 0;
+	return 0;
 }
