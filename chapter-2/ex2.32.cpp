@@ -8,6 +8,11 @@ null is a valid variable name.
 
 */
 
+/*
+ * Not sure how this exercise is relevant to the preceding reading material's
+ * subject matter.
+ * */
+
 int main() {
 
     
