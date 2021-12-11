@@ -1,11 +1,5 @@
 #include <iostream>
-
-struct Sales_data {
-	std::string bookTitle;
-	std::string bookISBN;
-	double bookPrice;
-	unsigned inventoryCount;
-};
+#include "Sales_data.h"
 
 int main() {
 	Sales_data book1;
